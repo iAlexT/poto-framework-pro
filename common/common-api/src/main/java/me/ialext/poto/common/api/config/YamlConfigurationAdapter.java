@@ -1,4 +1,4 @@
-package me.ialext.poto.cache.config;
+package me.ialext.poto.common.api.config;
 
 import java.util.List;
 

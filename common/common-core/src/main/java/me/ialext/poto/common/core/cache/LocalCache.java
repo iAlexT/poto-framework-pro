@@ -1,4 +1,4 @@
-package me.ialext.poto.common.api.cache;
+package me.ialext.poto.common.core.cache;
 
 import me.ialext.poto.common.api.cache.Cache;
 import me.ialext.poto.common.api.data.ObjectRepository;

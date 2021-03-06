@@ -1,4 +1,4 @@
-package me.ialext.poto.cache.model;
+package me.ialext.poto.common.api.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

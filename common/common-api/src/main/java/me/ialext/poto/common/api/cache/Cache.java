@@ -1,7 +1,7 @@
-package me.ialext.poto.cache.cache;
+package me.ialext.poto.common.api.cache;
 
-import me.ialext.poto.cache.data.ObjectRepository;
-import me.ialext.poto.cache.model.SavableModel;
+import me.ialext.poto.common.api.data.ObjectRepository;
+import me.ialext.poto.common.api.model.SavableModel;
 
 import java.util.Optional;
 import java.util.Set;

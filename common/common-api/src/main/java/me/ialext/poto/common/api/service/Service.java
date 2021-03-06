@@ -1,4 +1,4 @@
-package me.ialext.poto.cache.service;
+package me.ialext.poto.common.api.service;
 
 /**
  * Ths interface should be implemented

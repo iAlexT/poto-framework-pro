@@ -1,10 +1,10 @@
-package me.ialext.poto.common.api.cache;
+package me.ialext.poto.common.core.cache;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import me.ialext.poto.common.api.cache.Cache;
 import me.ialext.poto.common.api.data.ObjectRepository;
 import me.ialext.poto.common.api.model.SavableModel;
-import me.ialext.poto.common.api.helper.StringHelper;
+import me.ialext.poto.common.core.helper.StringHelper;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
