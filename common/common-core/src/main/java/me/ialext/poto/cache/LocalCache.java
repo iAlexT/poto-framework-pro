@@ -45,8 +45,8 @@ public class LocalCache<O extends SavableModel> implements Cache<O> {
   }
 
   @Override
-  public void save(O o) {
-    objectRepository.save(o);
+  public void save(String id) {
+    findOne(id).ifPresent(objectRepository::save);
   }
 
   @Override

@@ -53,12 +53,13 @@ public interface Cache<O extends SavableModel> {
   void cache(O o);
 
   /**
-   * Saves an {@link O} into the {@link Cache}'s
-   * {@link ObjectRepository}.
+   * Searches for an {@link O} into the
+   * {@link Cache}'s, and saves it into
+   * the {@link ObjectRepository} if present.
    *
-   * @param o The {@link O} to be saved.
+   * @param id The {@link O}'s id.
    */
-  void save(O o);
+  void save(String id);
 
   /**
    * Saves all the cached {@link O}s by this {@link Cache}
