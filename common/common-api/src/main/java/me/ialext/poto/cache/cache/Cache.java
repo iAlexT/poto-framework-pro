@@ -11,7 +11,7 @@ import java.util.Set;
  * thought for store {@link SavableModel}s, which
  * are models that can be stored into an {@link ObjectRepository}.
  *
- * @param <O> The model type to be stored.
+ * @param <O> The model type to be cached.
  */
 public interface Cache<O extends SavableModel> {
 
@@ -56,9 +56,9 @@ public interface Cache<O extends SavableModel> {
    * Saves an {@link O} into the {@link Cache}'s
    * {@link ObjectRepository}.
    *
-   * @param id The {@link O}'s id.
+   * @param o The {@link O} to be saved.
    */
-  void save(String id);
+  void save(O o);
 
   /**
    * Saves all the cached {@link O}s by this {@link Cache}
