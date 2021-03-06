@@ -1,10 +1,9 @@
-package me.ialext.poto.data;
+package me.ialext.poto.common.api.data;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
-import me.ialext.poto.cache.data.ObjectRepository;
-import me.ialext.poto.cache.model.SavableModel;
-import me.ialext.poto.helper.StringHelper;
+import me.ialext.poto.common.api.model.SavableModel;
+import me.ialext.poto.common.api.helper.StringHelper;
 
 import javax.inject.Inject;
 import java.util.HashSet;

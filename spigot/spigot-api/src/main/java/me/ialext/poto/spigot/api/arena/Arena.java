@@ -2,11 +2,16 @@ package me.ialext.poto.spigot.api.arena;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import me.ialext.poto.cache.model.SavableModel;
+import me.ialext.poto.common.api.model.SavableModel;
+import me.ialext.poto.spigot.api.match.Match;
 import org.bukkit.Location;
 
 import java.util.List;
+import java.util.Optional;
 
+/**
+ * An arena is a place where {@link Match}es can be disputed.
+ */
 public interface Arena extends SavableModel {
 
   /**
@@ -51,16 +56,6 @@ public interface Arena extends SavableModel {
 
   void unload();
 
-  enum Phase {
-
-    IDLE,
-    STARTING,
-    PLAYING,
-    RESTARTING,
-    UNAVAILABLE
-
-  }
-
   /**
    * Holds temporal information of this
    * {@link Arena}.
@@ -68,7 +63,7 @@ public interface Arena extends SavableModel {
   class Temporal {
 
     private boolean occupied;
-    private Phase phase;
+    private Match match;
 
     public boolean isOccupied() {
       return occupied;
@@ -78,12 +73,12 @@ public interface Arena extends SavableModel {
       this.occupied = occupied;
     }
 
-    public Phase getPhase() {
-      return phase;
+    public Optional<Match> getMatch() {
+      return Optional.ofNullable(match);
     }
 
-    public void setPhase(Phase phase) {
-      this.phase = phase;
+    public void setMatch(Match match) {
+      this.match = match;
     }
 
   }

@@ -1,4 +1,4 @@
-package me.ialext.poto.helper;
+package me.ialext.poto.common.api.helper;
 
 public interface StringHelper {
 

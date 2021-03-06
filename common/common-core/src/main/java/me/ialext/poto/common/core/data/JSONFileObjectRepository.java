@@ -1,8 +1,7 @@
-package me.ialext.poto.data;
+package me.ialext.poto.common.api.data;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import me.ialext.poto.cache.data.ObjectRepository;
-import me.ialext.poto.cache.model.SavableModel;
+import me.ialext.poto.common.api.model.SavableModel;
 
 import javax.inject.Inject;
 import java.io.File;
