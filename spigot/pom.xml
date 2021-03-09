@@ -15,6 +15,7 @@
   <modules>
     <module>spigot-api</module>
     <module>spigot-core</module>
+    <module>spigot-plugin</module>
   </modules>
 
   <properties>

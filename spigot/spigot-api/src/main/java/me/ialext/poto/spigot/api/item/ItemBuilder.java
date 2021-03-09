@@ -1,5 +1,6 @@
 package me.ialext.poto.spigot.api.item;
 
+import me.ialext.poto.common.api.builder.Builder;
 import org.bukkit.Material;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
@@ -12,7 +13,7 @@ import java.util.List;
  * Easily build {@link ItemStack}s with
  * fluent API support.
  */
-public interface ItemBuilder {
+public interface ItemBuilder extends Builder<ItemStack> {
 
   /**
    * Set the material for the resulting {@link ItemStack}.
@@ -77,13 +78,5 @@ public interface ItemBuilder {
    * @return This, fluent API.
    */
   ItemBuilder addFlag(ItemFlag flag);
-
-  /**
-   * Builds the {@link ItemStack}, using the given
-   * values.
-   *
-   * @return The built {@link ItemStack}.
-   */
-  ItemStack build();
 
 }
